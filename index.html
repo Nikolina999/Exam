@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бронювання послуг</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Бронювання послуг автомийки</h1>
+    
+    <label for="service">Оберіть послугу:</label>
+    <select id="service">
+      <option value="" disabled selected>-- Виберіть --</option>
+      <option value="Миття кузова">Миття кузова</option>
+      <option value="Повна хімчистка">Повна хімчистка</option>
+      <option value="Полірування">Полірування</option>
+    </select>
+
+    <label for="timeslot">Оберіть час:</label>
+    <select id="timeslot">
+      <option value="" disabled selected>-- Виберіть --</option>
+      <option value="10:00">10:00</option>
+      <option value="11:00">11:00</option>
+      <option value="12:00">12:00</option>
+      <option value="13:00">13:00</option>
+      <option value="14:00">14:00</option>
+    </select>
+
+    <button id="bookBtn">Забронювати</button>
+
+    <div id="confirmation" class="hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
